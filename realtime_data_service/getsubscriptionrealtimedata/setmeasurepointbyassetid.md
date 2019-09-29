@@ -3,7 +3,7 @@
 ## 请求格式
 
 ```
- PUT /dataService/devices/{assetId}/measurepoints/{measurepointId}/set?orgId={}&timeout={}&requestId={}
+ PUT {apigw-address}/dataService/devices/{assetId}/measurepoints/{measurepointId}/set?orgId={}&timeout={}&requestId={}
 {
         "arg":10
 }
@@ -13,7 +13,7 @@
 
 | **名称**       | **数据类型** | **是否必须** | **示例值** | **描述**                                                    |
 |:---------------|:-------------|:-------------|:-----------------|:------------------------------------------------------------|
-| orgId          | String       | true         |                  | Organization ID                                             |
+| orgId          | String       | true         |                  | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid)|
 | measurepointId | String       | true         | measurepoint1    | Measurepoint ID                                             |
 | assetId        | String       | true         |                  | asset ID                                                    |
 | timeout        | Long         | false        | 30000            | Service timeout ，单位毫秒，默认为30000，最大不能超过300000 |

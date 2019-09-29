@@ -7,7 +7,7 @@
 ## 请求格式
 
 ```
- POST /dataService/controlChannels?orgId={}
+ POST {apigw-address}/dataService/controlChannels?orgId={}
 {
         "controlChannelId": "DATASVC.CONTROL.controlChannelId1",
         "desc":"desc"
@@ -20,7 +20,7 @@
 
 | **名称** | **数据类型** | **是否必须** | **描述**        |
 |:---------|:-------------|:-------------|:----------------|
-| orgId    | String       | true         | Organization ID |
+| orgId    | String       | true         | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid) |
 
 
 ## 请求参数(Body)

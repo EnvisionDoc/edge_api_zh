@@ -5,14 +5,14 @@
 ## 请求格式
 
 ```
-GET /assetService/assetTrees/{assetTreeId}?orgId={}
+GET {apigw-address}/assetService/assetTrees/{assetTreeId}?orgId={}
 ```
 
 ## 请求参数(URI)
 
 | **名称**    | **数据类型** | **是否必须** | **描述**        |
 |:------------|:-------------|:-------------|:----------------|
-| orgId       | String       | true         | 组织ID |
+| orgId       | String       | true         | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid)  |
 | assetTreeId | String       | true         | 资产树ID   |
 
 

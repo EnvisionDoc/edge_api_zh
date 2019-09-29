@@ -5,17 +5,17 @@
 ## 请求格式
 
 ```
-GET /modelService/thingModels?orgId={}&pageSize={}&pageToken={}&scope={}
+GET {apigw-address}/modelService/thingModels?orgId={}&pageSize={}&pageToken={}&scope={}
 ```
 
 ## 请求参数
 
 | **名称**  | **数据类型** | **是否必须** | **示例值** | **描述**                                                                                                                                                                                                                                          |
 |:----------|:-------------|:-------------|:-----------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| orgId     | String       | true         |                  | Organization ID                                                                                                                                                                                                                                   |
-| scope     | Integer      | false        | 0                | Query scope. <br>·  0: Query private models in   the specified orgId only; <br>·  1: Query private models in the specified orgId and   public models of the platform; <br>·  2: Query public models of the platform only.   <br>The default is 0. |
-| pageSize  | Integer      | true         | 5                | Page size                                                                                                                                                                                                                                         |
-| pageToken | Integer      | true         | 1                | Page token of the current page                                                                                                                                                                                                                    |
+| orgId     | String       | true         |                  | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid)|
+| scope     | Integer      | false        | 0                | 查询范围。 <br>· 0：只从orgId指定的组织搜索私有模型； <br>· 1：从orgId指定的组织搜索私有模型及和公有模型；<br>· 2：只搜索平台的公有模型。<br>默认为1|
+| pageSize  | Integer      | true         | 5                | 每页记录数  |
+| pageToken | Integer      | true         | 1                | Page token of the current page|
 
 
 
@@ -23,20 +23,20 @@ GET /modelService/thingModels?orgId={}&pageSize={}&pageToken={}&scope={}
 
 | **名称**   | **数据类型**        | **描述**                                                                                 |
 |:-----------|:--------------------|:-----------------------------------------------------------------------------------------|
-| data       | Object              | Paged list of thing models                                                               |
+| data       | Object              | 物模型的分页列表                                                               |
 | pageToken  | Integer             | Current page number                                                                      |
-| pageSize   | Integer             | Page size                                                                                |
+| pageSize   | Integer             | 每页记录数           |
 | totalSize  | Integer             | Total size                                                                               |
-| data       | List<ThingModel>    | List of thing models                                                                     |
-| id         | String              | Thing model ID                                                                           |
-| orgId      | String              | Organization to which the thing model   belongs                                          |
-| name       | Object              | International name of the thing model                                                    |
-| desc       | String              | Thing model description                                                                  |
-| category   | String              | Thing model category                                                                     |
-| jsonschema | String              | Complete definition of thing model, a   json schema                                      |
-| parentId   | String              | Parent model ID. If the value is null,   the thing model is not inherited.               |
-| copyFromId | String              | Copy model ID. If the value is null, the   thing model is not copied from another model. |
-| tags       | Map<String, String> | Tags created by users on the thing model                                                 |
+| data       | List<ThingModel>    | 物模型列表  |
+| id         | String              | 物模型ID                                                                           |
+| orgId      | String              | 物模型所属的组织ID                                        |
+| name       | Object              | 该资产的各语言名称                                            |
+| desc       | String              | 物模型描述 |
+| category   | String              | 物模型类别                                                                    |
+| jsonschema | String              | 物模型的完整描述，是一个json schema                            |
+| parentId   | String              | 父模型ID。<br> 若值为空，则该物模型不是继承模型             |
+| copyFromId | String              | 复制模型ID。<br> 若值为空，则该模型不是由其它模型复制而来 |
+| tags       | Map<String, String> | 用户对物模型的自定义标签                                 |
 
 ## 示例 1
 

@@ -6,7 +6,7 @@
 ## 请求格式
 
 ```
-DELETE /dataService/setMeasurepointChannels/{setMeasurepointChannelId}?orgId={}
+DELETE {apigw-address}/dataService/setMeasurepointChannels/{setMeasurepointChannelId}?orgId={}
 ```
 
 ## 请求参数(URI)
@@ -15,7 +15,7 @@ DELETE /dataService/setMeasurepointChannels/{setMeasurepointChannelId}?orgId={}
 
 | **名称**                 | **数据类型** | **是否必须** | **描述**        |
 |:-------------------------|:-------------|:-------------|:----------------|
-| orgId                    | String       | true         | Organization ID |
+| orgId                    | String       | true         | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid) |
 | setMeasurepointChannelId | String       | true         | 写值通道Id      |
 
 

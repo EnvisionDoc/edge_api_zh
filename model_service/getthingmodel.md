@@ -5,35 +5,35 @@
 ## 请求格式
 
 ```
-GET /modelService/thingModels/{thingModelId}?orgId={}
+GET {apigw-address}/modelService/thingModels/{thingModelId}?orgId={}
 ```
 
 ## 请求参数
 
 | **名称**     | **数据类型** | **是否必须** | **描述**        |
 |:-------------|:-------------|:-------------|:----------------|
-| orgId        | String       | true         | Organization ID |
-| thingModelId | String       | true         | Thing Model ID  |
+| orgId        | String       | true         | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid) |
+| thingModelId | String       | true         | 物模型ID  |
 
 
 ## 响应参数
 
 | **名称**     | **数据类型**        | **描述**                                                                                      |
 |:-------------|:--------------------|:----------------------------------------------------------------------------------------------|
-| data         | ThingModel          | Thing model details                                                                           |
-| id           | String              | Thing model ID                                                                                |
-| orgId        | String              | Organization to which the thing model   belongs                                               |
-| name         | Object              | International name of the thing model                                                         |
-| defaultValue | String              | Default name                                                                                  |
-| i18nValue    | Map<String, String> | List of international names, pairs of   locales and names                                     |
-| en_US        | String              | English name                                                                                  |
-| zh_CN        | String              | Chinese name                                                                                  |
-| desc         | String              | Thing model description                                                                       |
-| category     | String              | Thing model category                                                                          |
-| jsonschema   | String              | Complete definition of thing model, a   json schema                                           |
-| parentId     | String              | Parent model ID. <br> If the value is null,   the thing model is not inherited.               |
-| copyFromId   | String              | Copy model ID. <br> If the value is null, the   thing model is not copied from another model. |
-| tags         | Map<String, String> | Tags created by users on the thing model                                                      |
+| data         | ThingModel          | 物模型详情                                                                           |
+| id           | String              | 物模型ID                                                                                |
+| orgId        | String              | 模型所属的组织ID                                               |
+| name         | Object              | 物模型的各种语言名称|
+| defaultValue | String              | 默认名称                                                                          |
+| i18nValue    | Map<String, String> | 国际化名称列表。语言环境与语言成对对应，如`"zh_CN": "Chinese name"`                                |
+| en_US        | String              | 英文名称                                                                                 |
+| zh_CN        | String              | 中文名称                                                                              |
+| desc         | String              | 物模型描述                                                                       |
+| category     | String              | 物模型类别                                                                       |
+| jsonschema   | String              | 物模型的完整描述，是一个json schema                                           |
+| parentId     | String              | 父模型ID。<br> 若值为空，则该物模型不是继承模型               |
+| copyFromId   | String              | 复制模型ID。<br> 若值为空，则该模型不是由其它模型复制而来 |
+| tags         | Map<String, String> | 用户对物模型的自定义标签                                                      |
 
 ## 示例 1
 

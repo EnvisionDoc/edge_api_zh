@@ -5,7 +5,7 @@
 ## 请求格式
 
 ```
- PUT /dataService/devices/multiSet?orgId={}
+ PUT {apigw-address}/dataService/devices/multiSet?orgId={}
 {
         "data": [
                {
@@ -48,7 +48,7 @@
 
 | **名称** | **数据类型** | **是否必须** | **描述**        |
 |:---------|:-------------|:-------------|:----------------|
-| orgId    | String       | true         | Organization ID |
+| orgId    | String       | true         | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid) |
 
 
 ## 请求参数(Body)

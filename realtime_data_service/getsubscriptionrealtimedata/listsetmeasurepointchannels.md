@@ -6,7 +6,7 @@
 ## 请求格式
 
 ```
-GET /dataService/setMeasurepointChannels?pageSize={}&pageToken={}&orgId={}
+GET {apigw-address}/dataService/setMeasurepointChannels?pageSize={}&pageToken={}&orgId={}
 ```
 
 ## 请求参数(URI)
@@ -15,7 +15,7 @@ GET /dataService/setMeasurepointChannels?pageSize={}&pageToken={}&orgId={}
 
 | **名称**  | **数据类型** | **是否必须** | **描述**                         |
 |:----------|:-------------|:-------------|:---------------------------------|
-| orgId     | String       | true         | Organization ID                  |
+| orgId     | String       | true         | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid)                  |
 | pageSize  | Int          | false        | Page size，默认为0，表示读取所有 |
 | pageToken | String       | false        | Page token. 默认为1，表示第一页  |
 

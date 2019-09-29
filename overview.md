@@ -5,11 +5,11 @@
 
 ## API列表
 
-- [通用服务](docs/edge-api/zh_CN/latest/common_service/overview.html)：
-- [接入服务](/docs/edge-api/zh_CN/latest/connection_service/overview.html)：
-- [模型服务](/docs/edge-api/zh_CN/latest/model_service/overview.html)：
-- [资产服务](/docs/edge-api/zh_CN/latest/asset_service/overview.html)：
-- [实时数据服务](/docs/edge-api/zh_CN/latest/realtime_data_service/overview.html)：
+- [通用服务](docs/edge-api/zh_CN/2.0.9/common_service/overview.html)：
+- [接入服务](/docs/edge-api/zh_CN/2.0.9/connection_service/overview.html)：
+- [模型服务](/docs/edge-api/zh_CN/2.0.9/model_service/overview.html)：
+- [资产服务](/docs/edge-api/zh_CN/2.0.9/asset_service/overview.html)：
+- [实时数据服务](/docs/edge-api/zh_CN/2.0.9/realtime_data_service/overview.html)：
 
 
 ## API Request结构
