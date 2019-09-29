@@ -5,7 +5,7 @@
 ## 请求格式
 
 ```
-PUT /dataService/setMeasurepointChannels/{setMeasurepointChannelId}?orgId={}
+PUT {apigw-address}/dataService/setMeasurepointChannels/{setMeasurepointChannelId}?orgId={}
 {
         "setMeasurepointChannelId": "DATASVC.SET.aaa",
         "desc":"aaaaaaa"
@@ -16,7 +16,7 @@ PUT /dataService/setMeasurepointChannels/{setMeasurepointChannelId}?orgId={}
 
 | **名称**                 | **数据类型** | **是否必须** | **描述**                   |
 |:-------------------------|:-------------|:-------------|:---------------------------|
-| orgId                    | String       | true         | Organization ID            |
+| orgId                    | String       | true         | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid)           |
 | setMeasurepointChannelId | String       | true         | setMeasurepoint channel Id |
 
 

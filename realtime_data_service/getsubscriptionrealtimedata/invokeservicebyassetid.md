@@ -5,7 +5,7 @@
 ## 请求格式
 
 ```
-PUT /dataService/devices/{assetId}/services/{serviceId}/invoke?orgId={}&requestId={}
+PUT {apigw-address}/dataService/devices/{assetId}/services/{serviceId}/invoke?orgId={}&requestId={}
 {
         "args": 1
 }
@@ -17,7 +17,7 @@ PUT /dataService/devices/{assetId}/services/{serviceId}/invoke?orgId={}&requestI
 
 | **名称**    | **数据类型** | **是否必须** | **描述**                                                                                                                     |
 |:------------|:-------------|:-------------|:-----------------------------------------------------------------------------------------------------------------------------|
-| orgId       | String       | true         | Organization ID                                                                                                              |
+| orgId       | String       | true         | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid)|
 | serviceId   | String       | true         | Service ID                                                                                                                   |
 | requestId   | String       | true         | Request ID of the call. If specified, the   request ID will be included in the response for tracking the request.            |
 | callbackUrl | String       | false        | After the call, if the service is   required to automatically execute another request, specify the URL of the new   request. |

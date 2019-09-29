@@ -5,15 +5,15 @@
 ## 请求格式
 
 ```
-GET /connectService/product/{productKey}/tags?orgId={}
+GET {apigw-address}/connectService/product/{productKey}/tags?orgId={}
 ```
 
 ## 请求参数
 
-| **名称**   | **数据类型** | **是否必须** | **描述**          |
-|:-----------|:-------------|:-------------|:------------------|
-| orgId      | String       | true         | 组织ID            |
-| productKey | String       | true         | Product key标识符 |
+| **名称**   | **数据类型** | **是否必须** | **描述**        |
+|:-----------|:-------------|:-------------|:----------------|
+| orgId      | String       | true         | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid) |
+| productKey | String       | true         | Product key标识符     |
 
 
 ## 响应参数

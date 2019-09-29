@@ -5,14 +5,14 @@
 ## 请求格式
 
 ```
-GET /assetService/assets?orgId={}
+GET {apigw-address}/assetService/assets?orgId={}
 ```
 
 ## 请求参数(URI)
 
 | **名称**  | **数据类型** | **是否必须** | **示例值** | **描述**                                                          |
 |:----------|:-------------|:-------------|:-----------------|:------------------------------------------------------------------|
-| orgId     | String       | true         |                  | 组织ID |
+| orgId     | String       | true         |                  | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid) |
 | pageSize  | int          | true         | 5                | 每页记录数|
 | pageToken | int          | true         | 1                | 请求页数。若不指定，默认返回第一页|
 

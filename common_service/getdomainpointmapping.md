@@ -5,14 +5,14 @@
 ## 请求格式
 
 ```
-GET /mdmService/getDomainPointMapping?orgId={}&mdmids={}&points={}
+GET {apigw-address}/mdmService/getDomainPointMapping?orgId={}&mdmids={}&points={}
 ```
 
 ## 请求参数
 
-| **名称** | **数据类型** | **是否必须** | **描述**                                                                                                                                   |
-|:---------|:-------------|:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| orgId    | String       | true         | 组织ID                                                                                                                          |
+| **名称** | **数据类型** | **是否必须** | **描述**|
+|:---------|:-------------|:-------------|:--------------------|
+| orgId    | String       | true         | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid)  |
 | mdmids   | String       | true         | 资产ID列表，逗号分隔，如assetId1,assetId2,assetId3，或者productKey1@@deviceKey1,productKey2@@deviceKey2,productKey3@@deviceKey3这种形式 |
 | points   | String       | true         | 领域点列表，逗号分隔，为空时表示获取所有领域点的映射类型|
 

@@ -5,7 +5,7 @@
 ## 请求格式
 
 ```
-DELETE /dataService/controlChannels/{controlChannelId}?orgId={}
+DELETE {apigw-address}/dataService/controlChannels/{controlChannelId}?orgId={}
 ```
 
 ## 请求参数(URI)
@@ -13,7 +13,7 @@ DELETE /dataService/controlChannels/{controlChannelId}?orgId={}
 
 | **名称**         | **数据类型** | **是否必须** | **描述**        |
 |:-----------------|:-------------|:-------------|:----------------|
-| orgId            | String       | true         | Organization ID |
+| orgId            | String       | true         | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid) |
 | controlChannelId | String       | true         | 控制通道Id      |
 
 

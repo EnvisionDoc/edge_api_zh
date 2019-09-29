@@ -5,14 +5,14 @@
 ## 请求格式
 
 ```
-GET /dataService/products/{productKey}/devices/{deviceKey}/measurepoints/latestData?orgId={}
+GET {apigw-address}/dataService/products/{productKey}/devices/{deviceKey}/measurepoints/latestData?orgId={}
 ```
 
 ## 请求参数(URI)
 
 | **名称**   | **数据类型** | **是否必须** | **描述**                                |
 |:-----------|:-------------|:-------------|:----------------------------------------|
-| orgId      | String       | true         | Organization ID                         |
+| orgId      | String       | true         | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid)                         |
 | productKey | String       | true         | Product key to which the device belongs |
 | deviceKey  | String       | true         | Device key                              |
 

@@ -5,7 +5,7 @@
 ## 请求URL
 
 ```
-GET /assetService/assetTrees/{assetTreeId}/nodes?orgId={}&searchKey={}&searchValue={}&pageToken={}&pageSize={}
+GET {apigw-address}/assetService/assetTrees/{assetTreeId}/nodes?orgId={}&searchKey={}&searchValue={}&pageToken={}&pageSize={}
 
 ```
 
@@ -13,9 +13,9 @@ GET /assetService/assetTrees/{assetTreeId}/nodes?orgId={}&searchKey={}&searchVal
 
 | **名称**    | **数据类型** | **是否必须** | **描述**                       |
 |:------------|:-------------|:-------------|:-------------------------------|
-| orgId       | String       | true         | 设备所属的组织ID               |
+| orgId       | String       | true         | 资产所属的组织ID。[如何获取orgId信息>>](/docs/api/zh_CN/2.0.9/api_faqs#id-orgid-orgid)                |
 | assetTreeId | String       | true         | 资产树ID                       |
-| searchKey   | String       | true         | 搜素类别，可填assetId或modelId |
+| searchKey   | String       | true         | 搜索类别，可填`assetId`或`modelId` |
 | searchValue | String       | true         | 资产ID值或模型ID值       |
 | pageToken   | String       | true         | 当前页码                       |
 | pageSize    | int          | true         | 每页记录数                       |
